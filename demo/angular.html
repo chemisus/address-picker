@@ -1,0 +1,26 @@
+<!doctype html>
+<html data-ng-app="DemoApp">
+    <head>
+        <title></title>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="../src/address-picker.js"></script>
+        <script src="../src/address-picker.angular.js"></script>
+        <script>
+            var demo = angular.module('DemoApp', ['AddressPicker']);
+        </script>
+        <style>
+            address {
+                float: left;
+            }
+
+            [contenteditable] {
+                border-bottom: 1px gray dashed;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <address contenteditable="true" data-addresspicker="%number% %street% %apt%\n%city%, %state% %zip%">595 W Church St #438, Orlando, FL 32805, USA</address>
+        </div>
+    </body>
+</html>
