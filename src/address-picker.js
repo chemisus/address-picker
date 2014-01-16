@@ -10,8 +10,3 @@ function AddressResponseReader() {
     this.readResponse = function (response) {
     };
 }
-
-
-/*
-
- */
